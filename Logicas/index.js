@@ -80,7 +80,7 @@ function myFunc() {
 //#4
     const animal = "gatoto"
     //console.log(animal)
-    ///console.log(animal.replaceAll("to", "do"))
+    //console.log(animal.replaceAll("to", "do"))
 
 //#5
 
@@ -98,24 +98,6 @@ ok slice
 
 */
 
-
-/*
-
-0      1     2          3             4               5          6       7        8          9 
-                 0123456
-const pokemon = "pikachu, 3, eletric, (thunderShock - QUICK attack - thuNder), STATIC, (VERIDIAN, CERULEAN, PALLET)"
-
-
-
-                   pikachu     PIKACHU              P          pikachu
-const namePikachu =  [0]   .toUpperCase()     .split(1,6) +      [0]
-
-
-
-
-console.log(${})
-
-*/
 /* 
     Transforme a string pokemon no seguinte texto:
 Name: Pikachu
@@ -147,23 +129,25 @@ const attackName = attack[0].slice(2).toLowerCase().replace('t', 'T')
 const attack2 = attack[1].trimStart().toLowerCase().replace('q', 'Q')
 const attack3 = attack[2].slice(0, 8).trimStart().toLowerCase().replace('t', 'T')
 //Places
-const places = pkm[5].slice(2).toLowerCase
-
-
+const places = pkm[5].slice(2).toLowerCase()
+const places2 = pkm[7].slice(0, 7).toLowerCase()
+const places3 = pkm[6].toLowerCase()
 
 const pokeDex = () => {
     return `
     Name: ${name},
-    Lv: ${level}, Type: ${type},
-    
-    `
+    Lv: ${level}, Type: ${type}
+    Ability: ${ability}
+    Attacks:
+        - ${attackName},
+        - ${attack2}
+        - ${attack3}
 
-    
-       
-    
-     
-
+    Places:
+        - ${places}
+        - ${places2}
+        - ${places3}
+    `;
 }
 
-
-console.log(places);
+console.log(pokeDex());
