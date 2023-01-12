@@ -35,7 +35,7 @@ let celsius = contCelsius;
 let fahrenheit = celsius * (9/5) + 32;
 let fahrenheitt = 68;
 let fahrenheitNumeroInteiro = Math.floor(fahrenheitt) 
-console.log(`A temperatura é ${fahrenheitNumeroInteiro} graus em Fahrenheit`)
+//console.log(`A temperatura é ${fahrenheitNumeroInteiro} graus em Fahrenheit`)
 
 
  /*
@@ -61,4 +61,109 @@ let idadeHumana = 20;
 let doisPrimeirosAnos = 10.5 * 2;
 let restante =  18 * 4;
 const total = doisPrimeirosAnos + restante;
-console.log(`Idade do pablo convertida em anos de cachorro: ${total}`)
+//console.log(`Idade do pablo convertida em anos de cachorro: ${total}`)
+
+
+
+
+//#3
+let nome = "ana"
+nome = "abacaxi"
+
+function myFunc() {
+  nome = "pablo" 
+  return nome
+}
+//console.log(myFunc())
+
+
+//#4
+    const animal = "gatoto"
+    //console.log(animal)
+    ///console.log(animal.replaceAll("to", "do"))
+
+//#5
+
+/*
+Nesse módulo as alunas devem entender os seguintes assuntos:
+
+ok VAR, LET 2
+ok toUpperCase
+ok toLowerCase
+ok replace
+ok replaceAll
+ok trim
+ok split
+ok slice
+
+*/
+
+
+/*
+
+0      1     2          3             4               5          6       7        8          9 
+                 0123456
+const pokemon = "pikachu, 3, eletric, (thunderShock - QUICK attack - thuNder), STATIC, (VERIDIAN, CERULEAN, PALLET)"
+
+
+
+                   pikachu     PIKACHU              P          pikachu
+const namePikachu =  [0]   .toUpperCase()     .split(1,6) +      [0]
+
+
+
+
+console.log(${})
+
+*/
+/* 
+    Transforme a string pokemon no seguinte texto:
+Name: Pikachu
+    Lv: 3 - Type: ELETRIC
+    Ability: static
+    Attacks:
+        - Thundershock,
+        - Quick attack
+        - Thunder
+
+    Places:
+        - veridian
+        - pallet
+        - cerulean
+    
+*/
+
+const pokemon = "pikachu, 3, eletric, (thunderShock - QUICK attack - thuNder), STATIC, (VERIDIAN, CERULEAN, PALLET)"
+
+const pkm = pokemon.split(",")
+const namePokemon = pkm[0]
+const name = namePokemon[0].toUpperCase() + namePokemon.slice(1)
+const level = pkm[1]
+const type = pkm[2].toUpperCase().trimStart()
+const ability = pkm[4].toLowerCase()
+//Attacks
+const attack = pkm[3].split("-")
+const attackName = attack[0].slice(2).toLowerCase().replace('t', 'T')
+const attack2 = attack[1].trimStart().toLowerCase().replace('q', 'Q')
+const attack3 = attack[2].slice(0, 8).trimStart().toLowerCase().replace('t', 'T')
+//Places
+const places = pkm[5].slice(2).toLowerCase
+
+
+
+const pokeDex = () => {
+    return `
+    Name: ${name},
+    Lv: ${level}, Type: ${type},
+    
+    `
+
+    
+       
+    
+     
+
+}
+
+
+console.log(places);
