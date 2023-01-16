@@ -1,6 +1,5 @@
 //1)
 //1.
-/*
 const soma = (num1 , num2 , num3) => {
   return num1 + num2 + num3
 }
@@ -45,7 +44,7 @@ const dividir = (num1, num2) => {
     }
 }
 dividir(20, 2)
-*/
+
 //DN dividir ||
 const dividir2 = (numerador, denominador) => {
    if(denominador === 0){
@@ -55,3 +54,28 @@ const dividir2 = (numerador, denominador) => {
    console.log(result);
 }
 dividir2(15, 3)
+
+
+//DN reajuste
+const reajusteSalarial = (salarioInicial) => {
+  if( salarioInicial === 2500 ){
+   console.log(`Seu salario com reajuste de 20% é de: ${((salarioInicial * 20) / 100) + salarioInicial}`); 
+  } else{
+    return console.log(`Seu salario com reajuste de 10% é de:${(salarioInicial * 10) / 100 + salarioInicial}`);
+  }
+}
+reajusteSalarial(3000)
+
+
+//DN resultado
+const calculandoNota = (nota1, nota2, nota3, nota4) => {
+let result = ((nota1 + nota2 + nota3 + nota4) / 4);
+if( result >= 7){
+  console.log(`Você foi aprovado(a), com nota: ${result}`)
+}else if( result < 7 && result >= 4 ){
+  console.log(`Você ficou em Exame, com nota: ${result}`)
+}else{
+ console.log(`Você foi reprovado, com nota:  ${result}`);
+}
+}
+calculandoNota(1, 2, 3, 1)
