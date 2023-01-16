@@ -1,3 +1,4 @@
+/*
 //1)
 //1.
 const soma = (num1 , num2 , num3) => {
@@ -79,3 +80,6 @@ if( result >= 7){
 }
 }
 calculandoNota(1, 2, 3, 1)
+*/
+
+//Folha 3
