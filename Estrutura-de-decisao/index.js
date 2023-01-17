@@ -31,7 +31,7 @@ const positivoNegativoOuNulo = (num) => {
    console.log(`NULO`)
   }
 }
-positivoNegativoOuNulo(0)
+positivoNegativoOuNulo(-8)
 
 //5
 const adicaoESubtracao = (num1, num2) =>{
@@ -42,3 +42,12 @@ return result > 20 ? console.log(`Dados do valor, somando 8: ${result + 8}`)
 adicaoESubtracao(10, 15);
 
 //6
+const raizQuadrada = (num) => {
+let calculoRaizQuadrada = num * 0.5
+if(calculoRaizQuadrada >= 0 ){
+console.log(calculoRaizQuadrada)
+} else if(calculoRaizQuadrada < 0){
+console.log(calculoRaizQuadrada * calculoRaizQuadrada.toFixed(3))
+}
+} 
+raizQuadrada(0)
