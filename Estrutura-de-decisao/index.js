@@ -9,11 +9,7 @@ adicao(50, 15)
 //2
 const venda = (valorUnitarioProduto, quantidadeVendida) => {
   let result = valorUnitarioProduto + quantidadeVendida;
-  if(result > 100){
-    console.log(`Bonificação de 10% para o vendedor!`)
-  }else{
-    console.log(`valor unitario mais unidade vendida : ${result}`)
-  }
+  result > 100 ? console.log(`Bonificação de 10% para o vendedor!`) : console.log(`valor unitario mais unidade vendida : ${result}`);
 }
 venda(100 , 3)
 
