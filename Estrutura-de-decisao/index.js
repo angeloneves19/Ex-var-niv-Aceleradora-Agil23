@@ -18,3 +18,17 @@ const parOuImpar = (num) => {
     num % 2 === 0 ? console.log(`Par!`)  : console.log(`Impar!`)
 }
 parOuImpar(2)
+
+
+//4
+const positivoNegativoOuNulo = (num) => {
+  if(num > 0){
+    console.log(`POSITIVO`)
+  }
+  else if(num < 0){
+    console.log(`NEGATIVO`)
+  }else{
+   console.log(`NULO`)
+  }
+}
+positivoNegativoOuNulo(0)
