@@ -83,3 +83,21 @@ calculandoNota(1, 2, 3, 1)
 */
 
 //Folha 3
+//atividade 2 folha 2
+const venda = (valorUnitarioProduto, quantidadeVendida) => {
+  let result = valorUnitarioProduto + quantidadeVendida;
+  if(result > 100){
+    console.log(`Bonificação de 10% para o vendedor!`)
+  } return console.log(`valor unitario mais unidade vendida : ${result}`)
+  
+}
+venda(20 , 3)
+
+// atividade 3 folha 2
+const parOuImpar = (num) => {
+ return console.log( num % 2 === 0 ? 'Par': 'Impar')
+}
+parOuImpar(2)
+
+
+// atividade 4 folha 2
