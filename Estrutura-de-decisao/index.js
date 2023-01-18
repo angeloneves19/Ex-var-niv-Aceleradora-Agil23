@@ -70,16 +70,27 @@ const divisivel = (a, b) => {
   let result = a % b;
   if (result === 0) {
     console.log(`resultado igual a : ${result} `);
-  }else{
-    console.log(`O resultado não divisivel por B`)
+  } else {
+    console.log(`O resultado não divisivel por B`);
   }
 };
-divisivel(18, 3)
+divisivel(18, 3);
 
 //9
 const MaiorOuMenor = (a, b) => {
- a > b
+  a > b
     ? console.log(`Valor do A:${a}, é maior que o B:${b}`)
     : console.log(`Valor do B:${b}, é maior que o valor do A:${a}`);
-}
-MaiorOuMenor(12, 6)
+};
+MaiorOuMenor(12, 6);
+
+//10
+const emprestimoConsignado = (valorPrestacao, salarioBruto) => {
+  let porcentagemSalarial = (salarioBruto * 30) / 100;
+  if (valorPrestacao <= porcentagemSalarial) {
+    console.log(`seu emprestimo foi aprovado`);
+  } else {
+    return console.log(`seu emprestimo não foi aprovado`);
+  }
+};
+emprestimoConsignado(120, 1302);
