@@ -24,5 +24,10 @@ const mediaAritmetica = ( num1, num2, num3, num4 ) =>{
     return somaAritmetica;
 }
 console.log(somaQuatro(6, 6, 6, 6));
+const KiloEmGrama = ( kilo ) =>{
+let grama = 1000
+return console.log(`Você está, com ${kilo * grama} gramas!`)
+}
+//KiloEmGrama(50)
 
 //5
