@@ -233,7 +233,7 @@ const igualOuNao = (num) => {
   }
 };
 igualOuNao(1000);
-*/
+
 
 //17/Ultimo <3
 const quadradoRaiz = (numA, numB) => {
@@ -248,3 +248,4 @@ const quadradoRaiz = (numA, numB) => {
   }
 };
 quadradoRaiz(100, 3);
+*/
