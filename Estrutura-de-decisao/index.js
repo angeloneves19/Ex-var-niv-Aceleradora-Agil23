@@ -124,7 +124,7 @@ const somaQuatroNumeros = (a, b, c, d) => {
 somaQuatroNumeros(-3, 5, 1, 2);
 
 // const diminuiQuatroNumeros = () =
-*/
+
 
 //12
 const acresente = (a, b, c) => {
@@ -190,3 +190,21 @@ const descendente = (a, b, c) => {
   }
 }
 descendente(2, 3, 1);
+
+//14 
+const divisivelPorNumero = (num) =>{
+  if( num % 10  === 0 ){
+    console.log(`Ele é divisivel por 10`);
+    if (num % 5 === 0) {
+      console.log(`Ele é divisivel por 5`);
+    }
+  }
+  if( num % 2 === 0 ){
+    console.log(`ele é divisivel por 2`);
+  }else{
+    console.log(`Ele não é divisivel, por nem um deles!`)
+  }
+}
+divisivelPorNumero(12)
+*/
+//15
