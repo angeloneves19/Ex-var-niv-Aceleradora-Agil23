@@ -19,3 +19,10 @@ return soma
 //console.log(somaQuatro(5, 5, 5, 5));
 
 //4
+const KiloEmGrama = ( kilo ) =>{
+let grama = 1000
+return console.log(`Você está, com ${kilo * grama} gramas!`)
+}
+//KiloEmGrama(50)
+
+//5
