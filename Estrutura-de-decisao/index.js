@@ -215,7 +215,7 @@ const numeroVinteNoventa = (num) => {
   : `20 e 90 não estão na faixa de valores`
 }
 console.log(numeroVinteNoventa(90))
-*/
+
 
 //16
 const igualOuNao = (num) => {
@@ -233,5 +233,18 @@ const igualOuNao = (num) => {
   }
 };
 igualOuNao(1000);
+*/
 
-//17
+//17/Ultimo <3
+const quadradoRaiz = (numA, numB) => {
+  if (numA > numB) {
+    let raizQuadradaMaior = Math.sqrt(numA);
+    let quadradoMenor = numB * numB;
+    console.log(
+      `raiz Quadrada do Valor ${numA} é : ${raizQuadradaMaior} e o Quadrado do ${numB} é ${quadradoMenor} `
+    );
+  }
+  if (numB > numA) {
+  }
+};
+quadradoRaiz(100, 3);
