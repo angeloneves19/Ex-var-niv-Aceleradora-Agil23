@@ -23,6 +23,6 @@ const KiloEmGrama = ( kilo ) =>{
 let grama = 1000
 return console.log(`Você está, com ${kilo * grama} gramas!`)
 }
-//KiloEmGrama(50)
+KiloEmGrama(50)
 
 //5
