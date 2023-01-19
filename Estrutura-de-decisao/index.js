@@ -206,7 +206,7 @@ const divisivelPorNumero = (num) =>{
   }
 }
 divisivelPorNumero(12)
-*/
+
 
 //15
 const numeroVinteNoventa = (num) => {
@@ -215,3 +215,23 @@ const numeroVinteNoventa = (num) => {
   : `20 e 90 não estão na faixa de valores`
 }
 console.log(numeroVinteNoventa(90))
+*/
+
+//16
+const igualOuNao = (num) => {
+  if (num === 5) {
+    console.log(`O numero é igual, a 5`);
+  }
+  if (num === 200) {
+    console.log(`O numero é igual, a 200!`);
+  }else if (num === 400) {
+    console.log(`O numero é igual, a 400!`);
+  } else if (num > 500 && num < 1000) {
+    console.log(` Está no intervalo, entre 500 a 1000!`);
+  } else {
+    console.log(`Ele está, fora dos escopos, anteriores!`);
+  }
+};
+igualOuNao(1000);
+
+//17
