@@ -12,8 +12,8 @@ const precoCarro = (
   const imposto = (precoFabrica * percentualImposto) / 100
   const precoFinalCarro = lucroDistribuidor + imposto + precoFabrica
   return `
-    a)valor correspondente lucro ${lucroDistribuidor}
-    b)O valor correspondente aos impostos ${imposto}
-    c)O preco final do veículo ${precoFinalCarro}`
+    a)valor correspondente lucro ao destribuidor: ${lucroDistribuidor}
+    b)O valor correspondente aos impostos: ${imposto}
+    c)O preco final do veículo: ${precoFinalCarro}`
 };
 console.log(precoCarro(40000, 40, 10))
