@@ -2,7 +2,7 @@
 //1)Construimos um programa, que recebia valores M e N.
 //2)Depois criamos uma variavel nomeada de Contador, para contar os pares.
 //3)Dai criamos a estrutura do For, para contar os numeros escolhidos.
-//4)Dai perguntamos Se o resultado do resto de 2 for igual a zero é par.
+//4)Dai perguntamos Se o resultado do modulo de 2 for igual a zero é par.
 //5)Caso a condição for true , colocamos o contador++, para contar quantos pares tem no resultado.
 //6)Imprimos junto o resultado, uma mesangem no console.log,usando template string.
 //7)E uma para o contador, tendo assim o resultado desejado no final!
