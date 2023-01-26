@@ -8,7 +8,7 @@
 const divisivelPorTres = (m, n) => {
    for(let i = m ; i < n; i++ ){
     // console.log(i)
-    if(i % 3 == 0){
+    if(i % 3 === 0){
       console.log(i)
     }
   }
