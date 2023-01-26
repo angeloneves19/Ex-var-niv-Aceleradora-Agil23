@@ -12,5 +12,3 @@ const lendoNumeros = (valorInicial, incremento, valorFinal) =>{
   }
 }
 lendoNumeros(0, 4, 30);
-
-//resolucao com while
