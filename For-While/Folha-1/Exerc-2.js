@@ -6,6 +6,6 @@
 */
 
 const n = 29
-for( let i = 0; i <= n; i++){
+for( let i = 0; i < n; i++){
     console.log(i)
 }
