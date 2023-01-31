@@ -1,48 +1,31 @@
-
 let condicao = true;
-let num1 = 0
-let num2 = 0
-let num3 = 0
+let num1 = 0;
+let num2 = 0;
+let num3 = 0;
+
 while (condicao) {
-  let leNumber = parseInt(prompt("Digite um numero:"))
-  if(leNumber > num1){ 
-     num3 = num2
-     num2 = num1
-     num1 = leNumber
-  }else if(num2 > num1){
-      num3 = num2
-      num2 = leNumber
-  }else if(num3 > num2){
-      
+  let leNumber = parseInt(
+    prompt("Digite um numero:(numero 7 encerra a contagem)")
+  );
+  if (leNumber > num1) {
+    num3 = num2;
+    num2 = num1;
+    num1 = leNumber;
+  } else if (num2 > num1) {
+    num3 = num2;
+    num2 = leNumber;
+  } else {
+    num3 = leNumber;
   }
   if (leNumber == 7) {
     condicao = false;
   }
-
 }
- console.log(`Numero maior é: ${num1}`)
- console.log(`Segundo Numero maior é: ${num2}`)
- console.log(`Terceiro numero maior: ${num3}`)
- 
+console.log(`Numero maior é: ${num1}`);
+console.log(`Segundo Numero maior é: ${num2}`);
+console.log(`Terceiro numero maior: ${num3}`);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//39 10 3915 55 7
 
 /*
 
