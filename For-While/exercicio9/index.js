@@ -11,10 +11,10 @@ while (condicao) {
     terceiroNumeroMaior = segundoNumeroMaior;
     segundoNumeroMaior = primeiroNumeroMaior;
     primeiroNumeroMaior = leNumber;
-  } else if (segundoNumeroMaior > primeiroNumeroMaior) {
+  } else if (leNumber > segundoNumeroMaior) {
     terceiroNumeroMaior = segundoNumeroMaior;
     segundoNumeroMaior = leNumber;
-  } else if (terceiroNumeroMaior > segundoNumeroMaior) {
+  } else if (leNumber > terceiroNumeroMaior) {
     terceiroNumeroMaior = leNumber;
   }
   if (leNumber == 7) {
