@@ -8,4 +8,5 @@ const idadeAtual = (anoAtual, dataNasc) => {
     return console.log(`Você é menor de idade, sua idade é: ${result}`);
   }
 };
+
 idadeAtual(2023, 2002)
