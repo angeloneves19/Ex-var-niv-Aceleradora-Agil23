@@ -1,10 +1,12 @@
 const somaValoresDigitados = () => {
-    let contadorNumero = 0
-    let leNumero = prompt('digite um numero (obs: -1 para a contagem)')
+   // let contadorNumero = 0 
 
-    while(leNumero < 5){
-        //let leNumero = prompt('digite um numero (obs: -1 para a contagem)')
-        if(leNumero > 0){
+
+    while(true){
+        let leNumero = parseInt(prompt('digite um numero (obs: -1 para a contagem'))
+        if (leNumero == -1) {
+         return false
         }
     }
 }
+console.log(somaValoresDigitados())
