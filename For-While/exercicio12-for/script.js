@@ -1,18 +1,19 @@
 const somaValoresDigitados = () => {
   let contadorNumero = 0
-  while (true) {
+  let condicao = true
+  while (condicao) {
     let leNumero = parseInt(
       prompt("digite um numero (obs: -1 para a contagem")
-    );
+    )
     if (leNumero == -1) {
-      return false
+      condicao = false
     }
     if (leNumero > 0) {
-     let result  = contadorNumero + leNumero
-     console.log(result)
+      contadorNumero = contadorNumero + leNumero
     }
-  } 
- 
+  }
+  return `Soma de todos o numero digitados: ${contadorNumero}`
+  
 }
-console.log(somaValoresDigitados());
+console.log(somaValoresDigitados())
 
