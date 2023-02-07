@@ -5,7 +5,7 @@ const divisao = () => {
   while (condicao) {
     let leNumero = prompt("digite um numero (-1 encerra a contagem)");
     if (leNumero > 0) {
-      if (leNumero % 2 === 0 && leNumero % 5 === 0) {
+    if (leNumero % 2 === 0 && leNumero % 5 === 0) {
         contadoDoisECinco++;
       }
       if (leNumero % 2 === 0 && leNumero % 3 === 0) {
