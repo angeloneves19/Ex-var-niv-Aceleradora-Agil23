@@ -7,6 +7,6 @@ const tirandoARaiz = (num) => {
       contadorSubtracoes++
     }
   }
-console.log(contadorSubtracoes)
+console.log(`A raiz quadrada é ${contadorSubtracoes}`)
 }
 tirandoARaiz(25)
