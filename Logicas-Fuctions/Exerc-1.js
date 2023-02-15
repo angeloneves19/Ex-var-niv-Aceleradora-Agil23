@@ -36,3 +36,6 @@ let fahrenheit = celsius * (9 / 5) + 32;
 let fahrenheitt = 68;
 let fahrenheitNumeroInteiro = Math.floor(fahrenheitt);
 console.log(`A temperatura é ${fahrenheitNumeroInteiro} graus em Fahrenheit`);
+
+
+
