@@ -1,4 +1,4 @@
-const empresa = () => {
+const empresa = () => { 
   let condicao = true;
   let armazenaSalario = 0;
   let contadorMasculino = 0;
@@ -21,23 +21,20 @@ const empresa = () => {
         let descontoMasculino = (salarioLiquido * 10) / 100;
         let salarioBrutoMasculino = salarioLiquido - descontoMasculino;
         contadorMasculino++;
-        let armaza =
-          armazenaSalario +
           console.log(` 
-        Codigo:${codigo}
-        Sexo:${sexo}
+        salario liquido: ${salarioLiquido}
         horasTrabalhadas:${horasTrabalhadas}
         salarioBruto:${salarioBrutoMasculino}
         contador masculino ${contadorMasculino}
         `);
-        console.log((armaza * contadorMasculino) / 100);
+        console.log()
       }
 
       if (sexo === "feminino") {
         let descontoFeminino = (salarioLiquido * 6) / 100;
         let salarioBrutoFeminino = salarioLiquido - descontoFeminino;
         contadorFeminino++;
-        console.log(` 
+        console.log(`
         Codigo:${codigo}
         Sexo:${sexo}
         horasTrabalhadas:${horasTrabalhadas}
