@@ -1,53 +1,54 @@
 const empresa = () => {
-  let condicao = true
-  let armazenaSalario = 0 
-  let contadorMasculino = 0
-  let contadorFeminino = 0
+  let condicao = true;
+  let armazenaSalario = 0;
+  let contadorMasculino = 0;
+  let contadorFeminino = 0;
   while (condicao) {
-    let codigo = parseFloat(prompt("Digite seu codigo da empresa: "))
+    let codigo = parseFloat(prompt("Digite seu codigo da empresa: "));
     if (codigo === -11) {
-      condicao = false
+      condicao = false;
     } else {
       let sexo = prompt(
         "Digite seu sexo: obs: Se for masculino digite masc, se for feminino digite femi"
-      )
+      );
       let horasTrabalhadas = parseFloat(
         prompt("Digite suas horas trabalhadas na empresa: ")
-      )
-      let salarioEmHoras = horasTrabalhadas * 26.9
-      let salarioLiquido = salarioEmHoras * 30
+      );
+      let salarioEmHoras = horasTrabalhadas * 26.9;
+      let salarioLiquido = salarioEmHoras * 30;
 
       if (sexo === "masculino") {
-        let descontoMasculino = (salarioLiquido * 10) / 100
-        let salarioBrutoMasculino = salarioLiquido - descontoMasculino
-        contadorMasculino++
-        let armaza = armazenaSalario = armazenaSalario + salarioBrutoMasculino
-        console.log(` 
+        let descontoMasculino = (salarioLiquido * 10) / 100;
+        let salarioBrutoMasculino = salarioLiquido - descontoMasculino;
+        contadorMasculino++;
+        let armaza =
+          armazenaSalario +
+          console.log(` 
         Codigo:${codigo}
         Sexo:${sexo}
         horasTrabalhadas:${horasTrabalhadas}
         salarioBruto:${salarioBrutoMasculino}
         contador masculino ${contadorMasculino}
-        `)
-        console.log(armaza / contadorMasculino / 100);
+        `);
+        console.log((armaza * contadorMasculino) / 100);
       }
-      
+
       if (sexo === "feminino") {
-        let descontoFeminino = (salarioLiquido * 6) / 100
-        let salarioBrutoFeminino = salarioLiquido - descontoFeminino
-        contadorFeminino++
+        let descontoFeminino = (salarioLiquido * 6) / 100;
+        let salarioBrutoFeminino = salarioLiquido - descontoFeminino;
+        contadorFeminino++;
         console.log(` 
         Codigo:${codigo}
         Sexo:${sexo}
         horasTrabalhadas:${horasTrabalhadas}
         salarioBruto:${salarioBrutoFeminino}
         Eistem ${contadorFeminino} funcionarias feminino
-        `)
+        `);
       }
     }
   }
-}
-console.log(empresa())
+};
+console.log(empresa());
 
 // 8 * 26,90
 //215,2
