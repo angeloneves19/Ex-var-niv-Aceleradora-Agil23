@@ -1,6 +1,6 @@
 const empresa = () => {
   let condicao = true
-  let armazenaSalario = 0
+  let armazenaSalario = 0 
   let contadorMasculino = 0
   let contadorFeminino = 0
   while (condicao) {
@@ -21,16 +21,17 @@ const empresa = () => {
         let descontoMasculino = (salarioLiquido * 10) / 100
         let salarioBrutoMasculino = salarioLiquido - descontoMasculino
         contadorMasculino++
-        armazenaSalario = salarioBrutoMasculino
-        salarioBrutoMasculino = armazenaSalario
+        let armaza = armazenaSalario = armazenaSalario + salarioBrutoMasculino
         console.log(` 
         Codigo:${codigo}
         Sexo:${sexo}
         horasTrabalhadas:${horasTrabalhadas}
         salarioBruto:${salarioBrutoMasculino}
-        media salarial masculina: ${salarioBrutoMasculino + armazenaSalario}
+        contador masculino ${contadorMasculino}
         `)
+        console.log(armaza / contadorMasculino / 100);
       }
+      
       if (sexo === "feminino") {
         let descontoFeminino = (salarioLiquido * 6) / 100
         let salarioBrutoFeminino = salarioLiquido - descontoFeminino
