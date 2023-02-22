@@ -10,37 +10,37 @@ const pesquisaEntreHabitantes = () => {
       prompt("Quantas Pessoas trabalham na sua casa?")
     );
     for (i = 1; i <= trabalhadoresNaCasa; i++) {
-      let renda = Number(prompt(`Qual a renda da Pessoa ${i} ?`));
-      armazena += renda;
-      contador++;
+      let renda = Number(prompt(`Qual a renda da Pessoa ${i} ?`))
+      armazena += renda
+      contador++
       if (renda > maiorSalario) {
         maiorSalario = renda
       }
       if (renda <= 100) {
         contadorDePessoasComSalarioDeCem++
-        let percentualAteCem = renda
+        
         console.log(
           "percentual  de pessoas com salario cem = " +
-            percentualAteCem * (contadorDePessoasComSalarioDeCem / 100)
+           contador * (contadorDePessoasComSalarioDeCem / 100)
 
         )
       }
     }
-    console.log("media de salarios " + (armazena / contador).toFixed(1));
+    console.log("media de salarios " + (armazena / contador).toFixed(1))
     console.log("maior salario " + maiorSalario)
 
     if (trabalhadoresNaCasa === 0) {
       Condicao = false
     } else {
-      let quantidadesPaes = confirm("voce tem Filhos ? (sim ou não)");
+      let quantidadesPaes = confirm("voce tem Filhos ? (sim ou não)")
       if (quantidadesPaes) {
         contadorPaes++
         console.log(contadorPaes)
-        let quantidadeFilhos = parseInt(prompt("Quantos filhos você tem ?"));
+        let quantidadeFilhos = parseInt(prompt("Quantos filhos você tem ?"))
       } else {
         console.log("")
       }
-      console.log(quantidadeFilhos)
+    //   console.log(quantidadeFilhos)
     }
   }
 };
