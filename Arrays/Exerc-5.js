@@ -4,6 +4,11 @@ elementos numéricos cada um e mostre o vetor resultante da
 intercalação deles.
 */
 
+//-criamos dois vetores vazios globais para armazenar seus devidos valores abaixo dados.
+//-criamos nossa funcao passando for, dedusimos um numero de parada nos parametros,
+//armazenando nos vetores usando o .push para empurrando eles dentro do vetor.
+//-retornamos o primeiro vetor concatenando com o segundo utilizando o metodo .contat
+//-passamos a funcao no console dando o valor dos paramentros.
 const vetor = []
 const vetor2 = []
 
