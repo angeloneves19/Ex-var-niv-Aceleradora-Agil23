@@ -5,21 +5,18 @@ que vai de 10% abaixo da média até 10% acima dela.
 */
 
 const leitorDeMediasVetor = () => {
+  let media = 6
+  let contador = 0
   const vetorOriginal = [2, 3, 4, 5, 1, 6, 9, 10, 7, 8]
   const vetorRepetido = []
-  let soma = 0
   for (let i = 0; i < 5; i++) {
-    for (let i = 0; i < vetorRepetido.length; i++) {
-      soma += vetorRepetido[i]
-    }
-    let media = soma / vetorRepetido.length
-    let mediaDezPorcento = (media * 10) / 100
     vetorRepetido.push(...vetorOriginal)
-    if (media < media - mediaDezPorcento && media > media + mediaDezPorcento) {
-      console.log(media)
+      let dezMenor = media - (media * 10) / 100
+      let dezMaior = media + (media * 10) / 100
+      if (vetorRepetido[i] > dezMenor && vetorRepetido[i] < dezMaior) {
+        contador++
+      }
+      console.log(contador)
     }
-    console.log(soma)
-    console.log(mediaDezPorcento)
   }
-}
 leitorDeMediasVetor()
