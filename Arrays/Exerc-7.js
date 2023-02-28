@@ -19,10 +19,8 @@ b. O código e o valor do objeto mais vendido (não se
 preocupe com empates).
 */
 
-
-
 const trasformandoEmVetor = []
-const produtoDaLoja = (nome, valor) =>{
+const postProduct = (nome, valor) => {
     return trasformandoEmVetor.push(
     {
         id: trasformandoEmVetor.length + 1,
@@ -31,15 +29,23 @@ const produtoDaLoja = (nome, valor) =>{
         ganhoDoVendedor: valor * 5 / 100
     })
 }
-produtoDaLoja("Lampada Magica", 359)
-produtoDaLoja("Sino", 219.05)
-produtoDaLoja("Escultura", 1867)
-produtoDaLoja("Piramide", 80.90)
-produtoDaLoja("Nicho Budista", 76.60)
-produtoDaLoja("Fonte de água", 206.30)
-produtoDaLoja("Escultura Girafa", 163.86)
-produtoDaLoja("Escultura Galinha", 39.90)
-produtoDaLoja("Bonecas Camponesas", 113.90)
-produtoDaLoja("Ganesha Bronze", 1140)
-const 
-trasformandoEmVetor.find(produtos => produtos.id === 6)
+postProduct("Lampada Magica", 359)
+postProduct("Sino", 219.05)
+postProduct("Escultura", 1867)
+postProduct("Piramide", 80.90)
+postProduct("Nicho Budista", 76.60)
+postProduct("Fonte de água", 206.30)
+postProduct("Escultura Girafa", 163.86)
+postProduct("Escultura Galinha", 39.90)
+postProduct("Bonecas Camponesas", 113.90)
+postProduct("Ganesha Bronze", 1140)
+
+const getProduct = (nameProduct, amount) => {
+  const Product = trasformandoEmVetor.find(products => products.nome === nameProduct)
+  const ganhoPorPorcentagemProduto = (Product.valor * amount) * 5 / 100 
+  const salárioFinal = ganhoPorPorcentagemProduto + 400
+  console.log(salárioFinal.toFixed(2))
+}
+getProduct('Bonecas Camponesas', 9)
+getProduct('Sino', 3)
+
