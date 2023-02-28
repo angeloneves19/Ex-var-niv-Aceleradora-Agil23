@@ -17,21 +17,19 @@ for (i = 0; i < algoritmo.length; i++) {
 console.log(contador)
 */
 
-let media = 6
-let contador = 0
-const vetorOriginal = [2, 3, 4, 5, 1, 6, 9, 10, 7, 8]
-const vetorRepetido = []
-for (let i = 0; i < 5; i++) {
-  vetorRepetido.push(...vetorOriginal)
-  let dezMenor = media - (media * 10) / 100
-  let dezMaior = media + (media * 10) / 100;
-  for (let j = 0; j < vetorRepetido.length; j++) {
-    contador++
-    if (vetorRepetido[j] > dezMenor && vetorRepetido[j] < dezMaior) {
-      
+const leitorDeMediasVetor = () => {
+  let media = 6
+  let contador = 0
+  let vetorRepetido = []
+  const vetorOriginal = [2, 3, 4, 5, 1, 6, 9, 10, 7, 8, 2, 3, 4, 5, 1, 6, 9, 10, 7, 8, 2, 3, 4, 5, 1, 6, 9, 10, 7, 8]
+  for (let i = 0; i < vetorOriginal.length; i++) {
+    vetorRepetido.push(...vetorOriginal)
+      let dezMenor = media - (media * 10) / 100
+      let dezMaior = media + (media * 10) / 100
+      if (vetorRepetido[i] >= dezMenor && vetorRepetido[i] <= dezMaior) {
+        contador++
+      }
     }
-    console.log(vetorRepetido / contador)
+    console.log(contador)
   }
-
-  //console.log(vetorRepetido)
-}
+leitorDeMediasVetor()
