@@ -46,19 +46,20 @@ const getProduct = (nameProduct, amount) => {
   const ganhoPorPorcentagemProduto = (Product.valor * amount) * 5 / 100 
   const salárioFinal = ganhoPorPorcentagemProduto + 400
   let totalProdutos = Product.valor * amount
+
   carrinho.push({
-    id : Product.id,
-    nome : nameProduct,
-    quantidade : amount
+    id: Product.id,
+    nome: nameProduct,
+    quantidade: amount
   
   })
    carrinho.map(numero => {
     if(numero.quantidade > armazena){
       armazena = numero.quantidade
-      console.log(` O produto ${carrinho.name} do codigo numero ${numero.id} ${numero.quantidade}`)
+      console.log(` O produto ${numero.nome} do codigo N°${numero.id} foram um dos mais vendidos, com a quantidade de ${numero.quantidade} peças`)
     }
    })
-
+  
 
   // console.log(`-------------via-cliente----------------------`)
   // console.log(`Total De compras: R$ ${totalProdutos.toFixed(2)}`)
@@ -67,6 +68,6 @@ const getProduct = (nameProduct, amount) => {
   // console.log(`Salario com adicionais do cliente ${salárioFinal.toFixed(2)}`)
 }
 getProduct('Bonecas Camponesas', 3)
-getProduct('Sino', 2)
+getProduct('Sino', 4)
 getProduct('Escultura em ouro', 9)
 getProduct('Fonte de água', 2)
