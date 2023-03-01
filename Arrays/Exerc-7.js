@@ -44,8 +44,14 @@ const getProduct = (nameProduct, amount) => {
   const Product = trasformandoEmVetor.find(products => products.nome === nameProduct)
   const ganhoPorPorcentagemProduto = (Product.valor * amount) * 5 / 100 
   const salárioFinal = ganhoPorPorcentagemProduto + 400
-  console.log(salárioFinal.toFixed(2))
+  let totalProdutos = Product.valor * amount
+  console.log(`-------------via-cliente----------------------`)
+  console.log(`Total De compras: R$ ${totalProdutos.toFixed(2)}`)
+  console.log(`Comissão do vendedor: R$ ${ganhoPorPorcentagemProduto.toFixed(2)}`)
+  console.log(`-------------via-funcionario------------------`)
+  console.log(`Salario com adicionais do cliente ${salárioFinal.toFixed(2)}`)
 }
-getProduct('Bonecas Camponesas', 9)
-getProduct('Sino', 3)
-
+getProduct('Bonecas Camponesas', 3)
+getProduct('Sino', 2)
+getProduct('Ganesha Bronze', 1)
+getProduct('Fonte de água', 2)
