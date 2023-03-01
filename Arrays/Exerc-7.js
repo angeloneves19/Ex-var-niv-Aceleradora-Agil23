@@ -18,14 +18,14 @@ valor da comissão que será paga ao vendedor.
 b. O código e o valor do objeto mais vendido (não se
 preocupe com empates).
 */
-let armazena = 0
+let comissao = 0 
 const trasformandoEmVetor = []
 const postProduct = (nome, valor) => {
   return trasformandoEmVetor.push({
     id: trasformandoEmVetor.length + 1,
     nome: nome,
     valor: valor,
-    ganhoDoVendedor: (valor * 5) / 100
+    ganhoDoVendedor: (valor * 5) / 100,
   })
 }
 postProduct("Lampada Magica", 359)
@@ -45,34 +45,35 @@ const getProduct = (nameProduct, amount) => {
     (products) => products.nome === nameProduct
   )
   const ganhoPorPorcentagemProduto = (Product.valor * amount * 5) / 100
-  const salárioFinal = ganhoPorPorcentagemProduto + 400
+  comissao += ganhoPorPorcentagemProduto
+  let salarioFinal = comissao + 400
   let totalProdutos = Product.valor * amount
+
   carrinho.push({
     id: Product.id,
     nome: nameProduct,
     valor: Product.valor * amount,
-    quantidade: amount
+    quantidade: amount,
   })
-
-  //console.log(`-------------via-cliente----------------------`)
-  //console.log(`Total De compras: R$ ${totalProdutos.toFixed(2)}`)
-  //console.log(
- //   `Comissão do vendedor: R$ ${ganhoPorPorcentagemProduto.toFixed(2)}`
- // )
- /// console.log(`-------------via-funcionario------------------`)
- // console.log(`Salario com adicionais do cliente ${salárioFinal.toFixed(2)}`)
+  console.log(`-------------via-cliente----------------------`)
+  console.log(`Total De compras: R$ ${totalProdutos.toFixed(2)}`)
+  console.log(
+    `Comissão do vendedor: R$ ${ganhoPorPorcentagemProduto.toFixed(2)}`
+  )
+  console.log(`-------------via-funcionario------------------`)
+  console.log(`Salario com adicionais do cliente ${salarioFinal.toFixed(2)}`)
 }
-getProduct("Bonecas Camponesas", 4);
-getProduct('Sino', 9)
-getProduct('Escultura em ouro', 3)
-getProduct('Fonte de água', 2)
+getProduct("Bonecas Camponesas", 4)
+getProduct("Sino", 2)
+getProduct("Escultura em ouro", 3)
+getProduct("Fonte de água", 2)
 
-
-//criar carrinho . find
-//sort() ordena numeros
-//pop() pega o ultimo
-//depois criar uma variavel global, para englobar tudo!
-//depois usa um map para mapear e puxxar tudo!
-
-const a = carrinho.map(products => products.quantidade).sort().pop()
-console.log(carrinho.find(products => products))
+const quantidadeMaior = carrinho
+  .map( pro => pro.quantidade )
+  .sort()
+  .pop()
+  const result = carrinho.find(produto => produto.quantidade === quantidadeMaior)
+ console.log( `
+ O produto ${result.nome} do codigo N°${result.id} no valor de R$ ${result.valor} 
+ foram o mais vendidos, com a quantidade de ${result.quantidade} peças`
+ )
