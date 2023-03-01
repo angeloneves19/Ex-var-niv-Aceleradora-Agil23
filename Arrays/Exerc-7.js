@@ -18,6 +18,20 @@ valor da comissão que será paga ao vendedor.
 b. O código e o valor do objeto mais vendido (não se
 preocupe com empates).
 */
+
+//Primeiro criamos uma variavel global chamada de trasformando vetor(array), para trasformar os numeros em vetor(array)!
+///Depois criamos o postProduct, para catalogar cada produto em ordem utilizando objetos,
+// e com seus devidos valores utilizando return para retornar tudo!
+//Dai criamos o objeto carrinho com vetor(array) vazio por que? Para tornalos vetores(arrays)!
+//Dai no Product tornamos todos os produtos em vetores(array)
+//Dai na variavel ganhoPorPorcentagemProduto, somamos todos os produtos vendidos, e no final acresentamos o salario do vendedor,
+// para termos uma deia de quanto ele ganharia no final do mês, de acordo com suas comissões,
+//Também fizemos a soma do produtos divido pela contidade para sabermos qual valor seria gasto na loja,
+//E quanto o vendedor ganharia de comissão.
+//Em seguida puxamos tudo do carrinho utilizando metodo push numa estrtura de objetos!
+//Por fim passamos tupo por console.log utlizando templet string, tendo o resultado desejado no terminal!
+//E bem no finalzinho mesmo criamos o quantidade maior, para absorver, a compra com maior quantidade da loja!
+//Dai passamos no console.log chamando cada obejeto, ulizando templat string, e passando no terminal, o que pedia no exercicio!
 let comissao = 0 
 const trasformandoEmVetor = []
 const postProduct = (nome, valor) => {
