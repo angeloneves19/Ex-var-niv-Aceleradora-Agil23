@@ -6,6 +6,7 @@ a. Tem lucro menor que 10%;
 b. Tem lucro entre 10% e 30%;
 c. Tem lucro maior que 30%
 */
+let valor = 0
 const produtos = []
 const loja = (nome, custo, preco) => {
   return produtos.push({
@@ -21,11 +22,9 @@ const porcentagem = (porcentagem) => {
   const porcentagemDeLucro = produtos.map(
     (numero) => (numero.custo * porcentagem) / 100
   )
-  return porcentagemDeLucro
+//   valor = porcentagemDeLucro.custo + porcentagemDeLucro
+  return porcentagemDeLucro.custo
 }
-
-retornarLucro()
-
 console.log(porcentagem(30))
-console.log(porcentagem(10))
+// console.log(porcentagem(10))
 
