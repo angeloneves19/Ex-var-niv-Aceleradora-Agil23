@@ -12,19 +12,19 @@ const loja = (nome, custo, preco) => {
   return produtos.push({
     nome: nome,
     custo: custo,
-    preco: preco,
+    preco: preco
   })
 }
-loja("Nike Air Jordan 1", 1300, 1500)
-loja("Nike Air Jordan 3", 1400, 1600)
+loja("Nike Air Jordan 1", 50, 70)///190
+loja("Nike Air Jordan 3", 50, 70)
+
+//custo + porcentagem = valor
+//preco - valor = resultado 
 
 const porcentagem = (porcentagem) => {
   const porcentagemDeLucro = produtos.map(
-    (numero) => (numero.custo * porcentagem) / 100
-  )
-//   valor = porcentagemDeLucro.custo + porcentagemDeLucro
-  return porcentagemDeLucro.custo
+   numero => ((numero.custo * porcentagem) / 100) + numero.preco) 
+  return porcentagemDeLucro
 }
-console.log(porcentagem(30))
-// console.log(porcentagem(10))
-
+// console.log(porcentagem(30))
+console.log(porcentagem(10))
