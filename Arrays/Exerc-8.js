@@ -5,7 +5,7 @@ quantidade de produtos que:
 a. Tem lucro menor que 10%;
 b. Tem lucro entre 10% e 30%;
 c. Tem lucro maior que 30%
-*/
+pair 4 de intervalo, voltamos 15:49
 let valor = 0
 const produtos = []
 const loja = (nome, custo, preco) => {
@@ -28,3 +28,7 @@ const porcentagem = (porcentagem) => {
 }
 // console.log(porcentagem(30))
 console.log(porcentagem(10))
+
+*/
+
+
