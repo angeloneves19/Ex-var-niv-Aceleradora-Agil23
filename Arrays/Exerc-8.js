@@ -5,7 +5,6 @@ quantidade de produtos que:
 a. Tem lucro menor que 10%;
 b. Tem lucro entre 10% e 30%;
 c. Tem lucro maior que 30%
-batata doce e bomm com sal
 */
 
 let valor = 0
@@ -32,10 +31,5 @@ console.log(porcentagem(30).map(num => num > 0 ? 'voce tem um lucro de mais de 3
  : 'voce tem um lucro menor'))
  console.log(porcentagem(10).map(num => num > 0 ? 'voce tem um lucro de mais de 10 porcento'
  : 'voce tem um lucro menor'))
-// porcentagem(10)
 
-// if(porcentagem(10).map(num => num) > 0 ) {
-//   console.log('voce teve lucro maior que 10% do produto comprado')
-// }else if(porcentagem(30) > 0){
-//   console.log(`Ele tem 30%`)
-// }
+
