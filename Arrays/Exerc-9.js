@@ -19,7 +19,7 @@ const verificacao = vetorCadastro.map(pessoa => pessoa.nome)
 // console.log(verificacao)
 
 const aprovados = () => {
-  verificacao.map(resultados => resultados.notas > 70 ? `${resultados.nome} foi aprovado `: `${resultados.nome} foi reprovado`)
-  return verificacao.notas = "aprovados"
+  vetorCadastro.filter(resultados => resultados.nota > 70 )
+  return vetorCadastro
 }
-console.log(aprovados)
+console.log(aprovados())
