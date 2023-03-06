@@ -15,7 +15,7 @@ let vetorItem = []
 let vetorValorCompra = []
 let vetorLucro = []
 
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 2; i++) {
   let nomeProduto = prompt("Qual é o nome do item ?")
   let custoDeCompra = Number(prompt("Quanto voce Pagou por Este Item?"))
   let lucroDeVenda = Number(prompt("Por Quanto voce vai vender este item?"))

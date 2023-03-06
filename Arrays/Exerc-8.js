@@ -31,5 +31,3 @@ console.log(porcentagem(30).map(num => num > 0 ? 'voce tem um lucro de mais de 3
  : 'voce tem um lucro menor'))
  console.log(porcentagem(10).map(num => num > 0 ? 'voce tem um lucro de mais de 10 porcento'
  : 'voce tem um lucro menor'))
-
-
