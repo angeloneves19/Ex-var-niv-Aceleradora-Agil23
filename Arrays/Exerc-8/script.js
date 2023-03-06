@@ -7,6 +7,10 @@ b. Tem lucro entre 10% e 30%;
 c. Tem lucro maior que 30%
 */
 
+//-Criamos os vetores para armezar os prompts .
+//-Criamos o contador para passarmos os valores e armazenalos nos vetores.
+//-Criamos as porcentagens de 10 e 30 para somar com o custo da compra.
+//E passar no console .
 let vetorItem = []
 let vetorValorCompra = []
 let vetorLucro = []
@@ -23,9 +27,9 @@ for (let i = 0; i < 5; i++) {
   let porcentagemDeTrinta = (custoDeCompra * 30) / 100 + custoDeCompra
   let resultadoLucroDez = lucroDeVenda - porcentagemDeDez
   let resultadoLucroTrinta = lucroDeVenda - porcentagemDeTrinta
-  console.log(`ucro 10%; ${resultadoLucroDez}`)
+  console.log(`Lucro 10%; ${resultadoLucroDez}`)
   console.log(`Lucro 30%; ${resultadoLucroTrinta}`)
-}
-console.log(vetorItem)
-console.log(vetorValorCompra)
-console.log(vetorLucro)
+ }
+// console.log(vetorItem)
+// console.log(vetorValorCompra)
+// console.log(vetorLucro)

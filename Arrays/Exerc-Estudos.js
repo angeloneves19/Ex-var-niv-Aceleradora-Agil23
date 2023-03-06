@@ -30,4 +30,4 @@ const tornandoAtivo = (nome) =>{
     return a.status = "ativo"
 }
 console.log(tornandoAtivo("Pablo"))
-console.log(person)
+console.log(person[1])
