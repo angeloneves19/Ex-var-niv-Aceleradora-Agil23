@@ -24,12 +24,12 @@
   nomes[7] = ['d', 'b', 'c', 'c', 'd', 'a', 'a', 'b']//8
   nomes[8] = ['b', 'b', 'c', 'a', 'd', 'a', 'a', 'a']//5
   nomes[9] = ['d', 'b', 'a', 'c', 'd', 'a', 'a', 'b']//7
-  //  console.log(nomes)
-  for(let i = 0 ; i < nomes.length; i++){
-    if(gabarito.toString() === nomes[i].toString()){
-      contador++
-      // console.log(nomes[i])
-    }
-    console.log(contador)
-  }
+   console.log(nomes)
+  // for(let i = 0 ; i < nomes.length; i++){
+  //   if(gabarito.toString() === nomes[i].toString()){
+  //     contador++
+  //     // console.log(nomes[i])
+  //   }
+  //   console.log(contador)
+  // }
   
