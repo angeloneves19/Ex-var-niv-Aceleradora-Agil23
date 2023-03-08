@@ -8,14 +8,18 @@ este informar um valor negativo
 
 let array = []
 let condicao = true
-  while (condicao) {
-    if(i > 0){
-      let numeros = parseInt(prompt('Descubra como o numero que eu estou pensando (voce digitou ' + i + ' numeros'))
-      array.push(numeros)
-    }  
-    if(numeros === -1){
-      condicao = false
-    } 
+while (condicao) {
+  let numeros = parseInt(
+    prompt(
+      "Descubra como o numero que eu estou pensando (voce digitou " +
+        i +
+        " numeros"
+    )
+  )
+  array.push(numeros)
+  if (numeros == -1) {
+    condicao = false
   }
-  
+}
+
 console.log(array)
