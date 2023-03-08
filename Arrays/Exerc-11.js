@@ -10,7 +10,12 @@
   mínima é 6.
 
   */
-
+//-Criamos o vetor do gabarito com as respostas e um vetor vazio para o cadastramento de alunos.
+//-Após criamos um funcao de cadastramento de passando para o vetor com ojetos .
+//-Depois acima da funcao de cadastramento criamos a funcao resultado passando por todos os indexs
+//e retornando um contador ja atualizado no vetor .
+//- filtramos o vetor para termos todos as informacoes dos alunos com nota maior que 5
+//depois foi facil passar a logica de porcentagem e e tirar as casas decimais.
 const vetorGabarito = ["d", "b", "c", "c", "d", "a", "a", "b"]
 const vetorAlunos = []
 const resultado = (gabaritoAluno) => {
@@ -30,7 +35,6 @@ const addAlunos = (nome, gabarito) => {
     nota: resultado(gabarito)
   })
 }
-
 addAlunos("Carlos Eduardo", ["c", "d", "c", "c", "a", "a", "d", "b"])
 addAlunos("Danilo", ["d", "b", "c", "c", "d", "a", "a", "b"])
 addAlunos("Fabio", ["b", "d", "c", "a", "b", "a", "c", "d"])
