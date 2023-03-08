@@ -8,7 +8,7 @@
   a. O número e a nota de cada aluno;
   b. A percentagem de aprovação, sabendo-se que a nota
   mínima é 6.
-    let nomes = ["Gabarito" ,"Carlos Eduardo" , "Danilo", "Fabio", "Gabriel", "Igor", "Julio", "Matheus", "Pablo", "Renatiinho"]
+
   */
 
 const vetorGabarito = ["d", "b", "c", "c", "d", "a", "a", "b"]
@@ -16,9 +16,9 @@ const vetorAlunos = []
 const resultado = (gabaritoAluno) => {
   let contador = 0
   for (let i = 0; i < vetorGabarito.length; i++) {
-  if(vetorGabarito[i] === gabaritoAluno[i]){
-   contador++
-  }
+    if (vetorGabarito[i] === gabaritoAluno[i]) {
+      contador++
+    }
   }
   return contador
 }
@@ -40,4 +40,5 @@ addAlunos("Julio", ["d", "b", "c", "c", "d", "a", "a", "b"])
 addAlunos("Matheus", ["d", "b", "c", "c", "d", "a", "a", "b"])
 addAlunos("Pablo", ["d", "b", "c", "c", "d", "a", "a", "b"])
 addAlunos("Renatinho", ["d", "b", "a", "c", "d", "a", "a", "b"])
-console.log(vetorAlunos)
+const mediaSeis = vetorAlunos.filter((num) => num.nota > 5)
+console.log(((mediaSeis.length * 100) / vetorAlunos.length).toFixed(2))
