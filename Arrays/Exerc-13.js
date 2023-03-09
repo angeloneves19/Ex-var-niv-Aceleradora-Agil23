@@ -19,6 +19,6 @@ addClientes("Pablo", 12) //1
 addClientes("Ângelo", 10) //1
 addClientes("Julio", 20) //2
 
-const dvds = vetorDvds.map(dvds => dvds)
+const dvds = vetorDvds.map(dvds => dvds === 10? -1 : "nao ganhou disconto")
 console.log(dvds)
 
