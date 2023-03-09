@@ -6,20 +6,22 @@ no vetor ou não. A interação com o usuário terminará quando
 este informar um valor negativo
  */
 
-let array = []
+let array = [ 1, 3, 5, 8, 9, 0, 665, 54, 2, 6, 21, 4, 654, 7, 22, 55, 66, 7, 45, 67,]
 let condicao = true
 while (condicao) {
-  let numeros = parseInt(
-    prompt(
-      "Descubra como o numero que eu estou pensando (voce digitou " +
-        i +
-        " numeros"
-    )
-  )
-  array.push(numeros)
-  if (numeros == -1) {
+  let numeros = parseInt(prompt( `Descubra como o numero que eu estou pensando(Numeros negativos param a contagem)` ))
+  if (numeros < 0) {
     condicao = false
   }
+  let encontrado = false;
+  for (i = 0; i < array.length; i++) {
+    if (array[i] === numeros) {
+      encontrado = true
+    }
+  }
+  if (encontrado) {
+    console.log("acertou")
+  } else {
+    console.log("tente novamente")
+  }
 }
-
-console.log(array)
