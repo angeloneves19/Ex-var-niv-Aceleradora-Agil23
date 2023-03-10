@@ -31,3 +31,27 @@ const witchElement = a1.some((el) => {
 })
 
 */
+//function hasDuplicates(arr) {
+ // return new Set(arr).size !== arr.length;
+//}
+
+//var arr = [ 2, 4, 6, 5, 4 ];
+
+//if (hasDuplicates(arr)) {
+ // console.log("Duplicate elements found.");
+//}
+//else {
+ // console.log("No Duplicates found.");
+//}
+
+const numeros = [2, 3, 2, 4, 5, 6, 7, 7, 7, 5, 2]
+const numerosRepetidos = numeros.filter((e, i, a) => a.indexOf(e) !== i) 
+console.log(numerosRepetidos) 
+
+
+
+
+
+/*
+  Resultado: Duplicate elements found.
+*/
