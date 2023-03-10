@@ -15,10 +15,17 @@ const addClientes = (nome, quantidade) => {
   vetorDvds.push(quantidade)
 }
 
-addClientes("Pablo", 12) //1
-addClientes("Ângelo", 10) //1
-addClientes("Julio", 20) //2
+addClientes("Pablo", 12)
+addClientes("Ângelo", 10)
+addClientes("Julio", 20)
+addClientes("Renato", 34)
+addClientes("Guilherme", 50)
+addClientes("Willian", 80)
+addClientes("Joao", 11)
+addClientes("Sr.Vitorio", 5)
 
-const dvds = vetorDvds.map(dvds => dvds === 10? -1 : "nao ganhou disconto")
-console.log(dvds)
-
+const dvds = vetorDvds.map(dvds => dvds >= 10 ? (dvds / 10).toFixed(0) : "0")
+const clientes = vetorClientes.map(pessoas => pessoas)
+for (let i = 0; i < vetorClientes.length; i++) {
+  console.log(`Cliente: ${clientes[i]}, teve ${dvds[i]} locação grátis!`)
+}
