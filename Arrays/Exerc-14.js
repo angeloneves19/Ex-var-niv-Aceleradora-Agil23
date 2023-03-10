@@ -5,6 +5,8 @@
 let numeros = [2, 3, 2, 4, 5, 6, 7, 7, 7, 5, 2] // 2 = 3, 5 = 2, 7 = 3.
 const repetidorDeNumeros = (numero) => {
 const result = numeros.filter(num => num === numero)
-return result.length
+return result
 }
 console.log(repetidorDeNumeros(5))
+console.log(repetidorDeNumeros(2))
+console.log(repetidorDeNumeros(3))
