@@ -8,11 +8,16 @@ nome de todos os clientes, com a quantidade de locações
 grátis a que tem direito.
 */
 
-const vetorClientes = []
-const vetorDvds = []
+//-Criamos vetores vazios, para armazenar os dados de pessoas e compras.
+//-Passamos a funcao, com os dados e armazenamos nos vetores.
+//-Cadastramos os clientes e mapeamos os dvds comprados, dividindo por 10 e tirando
+//as casas decimais.
+//-Criamos um loop para automatizar o console, passamos as informacoes de saida.
+const armazenaClientes = []
+const comprasDvds = []
 const addClientes = (nome, quantidade) => {
-  vetorClientes.push(nome)
-  vetorDvds.push(quantidade)
+  armazenaClientes.push(nome)
+  comprasDvds.push(quantidade)
 }
 
 addClientes("Pablo", 12)
@@ -24,8 +29,8 @@ addClientes("Willian", 80)
 addClientes("Joao", 11)
 addClientes("Sr.Vitorio", 5)
 
-const dvds = vetorDvds.map(dvds => dvds >= 10 ? (dvds / 10).toFixed(0) : "0")
-const clientes = vetorClientes.map(pessoas => pessoas)
-for (let i = 0; i < vetorClientes.length; i++) {
+const dvds = comprasDvds.map(dvds => dvds >= 10 ? (dvds / 10).toFixed(0) : "0")
+const clientes = armazenaClientes.map(pessoas => pessoas)
+for (let i = 0; i < armazenaClientes.length; i++) {
   console.log(`Cliente: ${clientes[i]}, teve ${dvds[i]} locação grátis!`)
 }
