@@ -2,16 +2,9 @@
  Determine e mostre, a seguir, quais elementos de A estão repetidos e quantas 
  vezes cada um se repete.*/
 
-let numeros = [2, 3, 2, 4, 5, 6, 7, 7, 7, 5]
-let contador = 0
-const seila = (numero) => {
-  //numeros.filter(num => num === numero? "repete" : "nao")
-  //for (let i = i < numeros.length; i++) {
-  //  contador++
- // }
- 
+let numeros = [2, 3, 2, 4, 5, 6, 7, 7, 7, 5, 2] // 2 = 3, 5 = 2, 7 = 3.
+const repetidorDeNumeros = (numero) => {
+const result = numeros.filter(num => num === numero)
+return result.length
 }
-seila(2)
-seila(5)
-seila(7)
-console.log()
+console.log(repetidorDeNumeros(5))
