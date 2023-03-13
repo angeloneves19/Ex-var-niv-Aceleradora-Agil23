@@ -16,7 +16,9 @@
  const numeros = [2, 3, 2, 4, 5, 6, 7, 7, 7, 5, 2]
 const repetidorDeNumeros = (numero) => {
     const result = numeros.filter(num => num === numero)
-    return `o numero que se repete é ${numero}, repetiu um total de ${result.length}x`
-    
+    const resultadoFinal = result.length !== 0 
+    ? `o numero que se repete é ${numero},repetiu um total de ${result.length}x`
+    : `Este numero não esta no nosso banco de Dados`
+    return resultadoFinal
 }
-console.log(repetidorDeNumeros())
+console.log(repetidorDeNumeros(0))
