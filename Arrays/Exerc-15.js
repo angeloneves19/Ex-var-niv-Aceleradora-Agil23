@@ -6,6 +6,7 @@ b. Quantos litros de combustível cada um dos carros cadastrados consomem
 para percorrer uma distância de 1.000 quilômetros.*/
 const carros = []
 const consumoPorLitro = []
+const teste = []
 
 const concenssionaria = (carro, kmPorLitro) => {
   carros.push(carro)
@@ -20,12 +21,22 @@ concenssionaria("gol g7", 13.3 )
 // console.log(carros)
 // console.log(consumoPorLitro)
 
+
 const custoBeneficio = () => {
   for(let i= 0; i < carros.length ; i++){
     `o carro ${carros[i]} percorre por litro ${consumoPorLitro[i]} km/l`
-  let maiorKm = consumoPorLitro.sort().pop()
-  return `o carro que corre mais é ${carros[i]} com ${}`
+  //let maiorKm = consumoPorLitro.sort().pop()
+  return carros.sort()   //`o carro que corre mais é ${carros[i]} com ${}`
 
   }
 }
-console.log(custoBeneficio())
+const test = () =>{
+   teste.push({
+     nome: carros,
+     kmPorLitro: consumoPorLitro
+   })
+}
+test()
+console.log(teste)
+
+//console.log(custoBeneficio())
