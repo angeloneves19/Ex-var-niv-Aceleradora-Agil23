@@ -9,34 +9,124 @@ const consumoPorLitro = []
 const teste = []
 
 const concenssionaria = (carro, kmPorLitro) => {
-  carros.push(carro)
+  carros.push(carro);
   consumoPorLitro.push(kmPorLitro)
 }
 concenssionaria("logan 1.0", 14)
 concenssionaria("fiat uno 1.0", 16.6)
 concenssionaria("kwid", 15.7)
 concenssionaria("hb20 1.6", 12.5)
-concenssionaria("gol g7", 13.3 )
+concenssionaria("gol g7", 13.3)
 
 // console.log(carros)
 // console.log(consumoPorLitro)
 
 
-const custoBeneficio = () => {
-  for(let i= 0; i < carros.length ; i++){
-    `o carro ${carros[i]} percorre por litro ${consumoPorLitro[i]} km/l`
-  //let maiorKm = consumoPorLitro.sort().pop()
-  return carros.sort()   //`o carro que corre mais é ${carros[i]} com ${}`
 
+
+  // teste.push({
+  //   id: teste.length + 1,
+  //   nome: carros,
+  //   kmPorLitro: consumoPorLitro,
+  // })
+
+  for(let i = 0; i < carros.length ; i++){
+  //const result = consumoPorLitro.filter(num => num > num)
+
+  return console.log(consumoPorLitro.map(num => num > num ? "achei" : "nao"))
   }
-}
-const test = () =>{
-   teste.push({
-     nome: carros,
-     kmPorLitro: consumoPorLitro
-   })
-}
-test()
-console.log(teste)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //console.log(custoBeneficio())
+
+///const custoBeneficio = () => {
+//for(let i= 0; i < carros.length ; i++){
+//  `o carro ${carros[i]} percorre por litro ${consumoPorLitro[i]} km/l`
+//let maiorKm = consumoPorLitro.sort().pop()
+//return carros.sort()   //`o carro que corre mais é ${carros[i]} com ${}`
+
+//}
+//}
