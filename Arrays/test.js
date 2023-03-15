@@ -1,22 +1,20 @@
 function bubbleSort() {
-  const arrayNumbers = [20, 11, 3, 5, 6, 14, 1, 5, 7, 4, 19, 13, 10, 17]
+  const arrayNumbers = [0, 20, 17, 19, 33, 11, 12, 18, 10, 7, 8, 3, 2, 1, 14, 16, 15, 9]
   let isChange
   do {
     isChange = false
 
     for (let i = 0; i < arrayNumbers.length; i++) {
       if (arrayNumbers[i] > arrayNumbers[i + 1]) {
-        const temp = arrayNumbers[i] // Guardamos o valor maior (ex 5)
+        let temp = arrayNumbers[i] // Guardamos o valor maior (ex 5)
         arrayNumbers[i] = arrayNumbers[i + 1] // Trocamos o valor de 5 pelo valor 2
         arrayNumbers[i + 1] = temp // O valor que esta com 2 agora recebe 5
         isChange = true
       }
     }
   } while (isChange)
-
 return arrayNumbers
 }
-
 console.log(bubbleSort())
 
 

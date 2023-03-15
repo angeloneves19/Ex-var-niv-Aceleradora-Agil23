@@ -32,17 +32,18 @@ while (vetor.length > 0) {
 console.log(vetorCrescente);
 console.log(`O elemento do vetor que apresenta o menor valor é ${vetorCrescente[0]}`)
 */
-let result = 0
-function bubbleSort() {
-  const numeros = [0, 20, 17, 19, 33, 11, 12, 18, 10, 7, 8, 3, 2, 1, 14, 16, 15, 9, ]
-  for (let i = 0; i < numeros.length; i++) {
-      if (numeros[i] < numeros[i + 1]) {
-           result = numeros[i]
-           numeros[i] = numeros[i + 1]
-           numeros[i + 1] = i
-           console.log(result)
 
+function bubbleSort() {
+  const numeros = [0, 20, 17, 19, 33, 11, 100, 18, 10, 7, 8, 3, 2, 1, 14, 16, 15, 9]
+  for (let i = 0; i < numeros.length; i++) {
+    for (let j = 0; j < numeros.length - (i-1); j++) {
+      if (numeros[i] > numeros[i + 1]) {
+        let result = numeros[i]
+        numeros[i] = numeros[i + 1]
+        numeros[i + 1] = result
       }
-  }
+     }
+  } 
 }
+
 bubbleSort()
