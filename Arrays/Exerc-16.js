@@ -10,7 +10,7 @@ elementos restantes (trocando o de menor valor com a
 segunda posição), depois os 17, os 16 e assim por
 diante, até restar um único elemento, o maior deles.
 
-*/
+
 
 //exercicio 16 -vetores
 let vetor = [4, 3, 10, 5, 19, 20, 17, 16, 1, 7, 9, 8, 0, 30, 29, 44, 31, 40, 50];
@@ -30,4 +30,19 @@ while (vetor.length > 0) {
 }
 //console.log(TESTANDO  ${vetor});
 console.log(vetorCrescente);
-console.log(`O elemento do vetor que apresenta o menor valor é ${vetorCrescente[0]}`);
+console.log(`O elemento do vetor que apresenta o menor valor é ${vetorCrescente[0]}`)
+*/
+let result = 0
+function bubbleSort() {
+  const numeros = [0, 20, 17, 19, 33, 11, 12, 18, 10, 7, 8, 3, 2, 1, 14, 16, 15, 9, ]
+  for (let i = 0; i < numeros.length; i++) {
+      if (numeros[i] < numeros[i + 1]) {
+           result = numeros[i]
+           numeros[i] = numeros[i + 1]
+           numeros[i + 1] = i
+           console.log(result)
+
+      }
+  }
+}
+bubbleSort()
