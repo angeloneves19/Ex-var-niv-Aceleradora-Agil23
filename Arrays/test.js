@@ -119,3 +119,16 @@ const witchElement = a1.some((el) => {
 //else {
  // console.log("No Duplicates found.");
 //}
+
+
+
+
+let a = ['laranja', 'verde' , 'azul']
+a.slice(2, 2)
+console.log(a.slice(2, 2))
+console.log(a)
+
+const ab = (b) => {
+  return b.toUpperCase()
+}
+console.log(ab('brincar com o Juliao'))
