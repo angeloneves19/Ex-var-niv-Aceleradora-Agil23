@@ -1,3 +1,4 @@
+/*
 function bubbleSort() {
   const arrayNumbers = [0, 20, 17, 19, 33, 11, 12, 18, 10, 7, 8, 3, 2, 1, 14, 16, 15, 9]
   let isChange
@@ -18,6 +19,22 @@ return arrayNumbers
 console.log(bubbleSort())
 
 
+function bubbleSort() {
+  const numeros = [100, 90, 80, 70, 60, 50, 40, 30, 20, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+  let temp = 0
+  for (let i = 0; i < numeros.length; i++) {
+    for (let j = 0; j < numeros.length - (i - 1); j++) {
+      if (numeros[j] > numeros[j + 1]) {
+        temp = numeros[j + 1]
+        numeros[j + 1] = numeros[j]
+        numeros[j] = temp
+      }
+    }
+  }
+  return numeros
+}
+
+console.log(bubbleSort())
 
 
 
