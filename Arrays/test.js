@@ -1,3 +1,56 @@
+const ab = (b) => {
+  const primeiraPosicao = b[0].toUpperCase() + b.slice(1)
+  return primeiraPosicao 
+}
+console.log(ab('angelo'))
+console.log(ab('pablo'))
+console.log(ab('julio'))
+
+//difenrenca entre slice e substring
+var testing = 'ola povo'
+console.log(testing.slice(3))
+console.log(testing.substring(3,7))
+
+//splice
+const meses = ['Jane', 'marc', 'Abril', 'maio'];
+meses.splice(1 , 0, 'Feve')
+console.log(meses)
+
+
+
+
+
+
+
+
+console.log(`
+
+Name: ${pkm[0].nome}
+Lv: ${pkm[0].level}  - Type: ${pkm[0].type.toUpperCase()}
+Ability: ${pkm[0].ability.toLowerCase()}
+Attacks:
+    - ${pkm[0].atacks1},
+    - ${pkm[0].atacks2}
+    - ${pkm[0].atacks3}
+
+Places:
+    - ${pkm[0]}
+    - pallet
+    - cerulean
+    `);
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 function bubbleSort() {
   const arrayNumbers = [0, 20, 17, 19, 33, 11, 12, 18, 10, 7, 8, 3, 2, 1, 14, 16, 15, 9]
@@ -121,7 +174,7 @@ const witchElement = a1.some((el) => {
 //}
 
 
-
+/*
 
 let a = ['laranja', 'verde' , 'azul']
 a.slice(2, 2)
@@ -132,3 +185,4 @@ const ab = (b) => {
   return b.toUpperCase()
 }
 console.log(ab('brincar com o Juliao'))
+*/

@@ -15,25 +15,27 @@ Places:
     - cerulean
 */
 
-let pokemonn =
-  "pikachu, 3, eletric, (thunderShock - QUICK attack - thuNder), STATIC, (VERIDIAN, CERULEAN, PALLET)"
-let transforme = pokemonn.split(",")
-// console.log(transforme
-const pikachu = transforme[0].replace("p", "P")
-const atacks = transforme[3].split("-")
-const place = transforme[5].split(",")
+let pokemon = "pikachu, 3, eletric, (thunderShock - QUICK attack - thuNder), STATIC, (VERIDIAN, CERULEAN, PALLET)"
+let remocao = pokemon.split(",")
+let remocaoAtacks =  remocao[3].split("-")
+
+const transforma = (array) => {
+  return  array[0].toUpperCase() + array.slice(1).toLowerCase()
+  
+}
+
 
 const pkm = []
 const objeto = () => {
   pkm.push({
-    nome: pikachu,
-    level: transforme[1],
-    type: transforme[2],
-    ability: transforme[4],
-    atacks1: transforme[3].split("-")[0],
-    atacks2: transforme[3].split("-")[1],
-    atacks3: transforme[3].split("-")[2],
-    place1: transforme[5],
+    nome: transforma(remocao[0]),
+    level: remocao[1],
+    type:   remocao[2],
+    ability: remocao[4],
+    atacks1: remocaoAtacks[0].slice(2, 14),
+    atacks2: remocaoAtacks[1],
+    atacks3: remocaoAtacks[2],
+    place1: remocao[5],
   });
 console.log(`
 
@@ -41,20 +43,14 @@ Name: ${pkm[0].nome}
 Lv: ${pkm[0].level}  - Type: ${pkm[0].type.toUpperCase()}
 Ability: ${pkm[0].ability.toLowerCase()}
 Attacks:
-    - ${pkm[0].atacks1.split("1").replace("t", "T").split("(")},
-    - ${pkm[0].atacks2}
-    - ${pkm[0].atacks3}
+    - ${transforma(pkm[0].atacks1).trim()},
+    - ${transforma(pkm[0].atacks2).trim()}
+    - ${pkm[0].atacks3.slice(1, 8).toLowerCase()}
 
 Places:
-    - veridian
+    - ${transforma(pkm[0].place1)}
     - pallet
     - cerulean
     `);
 }
 objeto()
-
-//
-//
-//
-//
-//
