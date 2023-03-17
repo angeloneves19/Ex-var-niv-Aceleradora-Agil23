@@ -1,47 +1,54 @@
-const ab = (b) => {
-  const primeiraPosicao = b[0].toUpperCase() + b.slice(1)
-  return primeiraPosicao 
-}
-console.log(ab('angelo'))
-console.log(ab('pablo'))
-console.log(ab('julio'))
+// const ab = (b) => {
+//   const primeiraPosicao = b[0].toUpperCase() + b.slice(1)
+//   return primeiraPosicao 
+// }
+// console.log(ab('angelo'))
+// console.log(ab('pablo'))
+// console.log(ab('julio'))
 
-//difenrenca entre slice e substring
-var testing = 'ola povo'
-console.log(testing.slice(3))
-console.log(testing.substring(3,7))
+// //difenrenca entre slice e substring
+// var testing = 'ola povo'
+// console.log(testing.slice(3))
+// console.log(testing.substring(3,7))
 
-//splice
-const meses = ['Jane', 'marc', 'Abril', 'maio'];
-meses.splice(1 , 0, 'Feve')
-console.log(meses)
-
-
+// //splice
+// const meses = ['Jane', 'marc', 'Abril', 'maio'];
+// meses.splice(1 , 0, 'Feve')
+// console.log(meses)
 
 
 
 
 
 
-console.log(`
-
-Name: ${pkm[0].nome}
-Lv: ${pkm[0].level}  - Type: ${pkm[0].type.toUpperCase()}
-Ability: ${pkm[0].ability.toLowerCase()}
-Attacks:
-    - ${pkm[0].atacks1},
-    - ${pkm[0].atacks2}
-    - ${pkm[0].atacks3}
-
-Places:
-    - ${pkm[0]}
-    - pallet
-    - cerulean
-    `);
 
 
+// console.log(`
 
+// Name: ${pkm[0].nome}
+// Lv: ${pkm[0].level}  - Type: ${pkm[0].type.toUpperCase()}
+// Ability: ${pkm[0].ability.toLowerCase()}
+// Attacks:
+//     - ${pkm[0].atacks1},
+//     - ${pkm[0].atacks2}
+//     - ${pkm[0].atacks3}
 
+// Places:
+//     - ${pkm[0]}
+//     - pallet
+//     - cerulean
+//     `);
+
+    const transforma = (array) => {
+      return  array.charAt(0).toUpperCase() + array.slice(1).toLowerCase()
+      
+    }
+    console.log(transforma('Quick attack'))
+
+    const placeMinusculas = (valor) => {
+      return valor.toLowerCase()
+    }
+    console.log(placeMinusculas('VERIDIAN'))
 
 
 
