@@ -20,7 +20,7 @@ let remocao = pokemon.split(",")
 let remocaoAtacks =  remocao[3].split("-")
 
 const transforma = (array) => {
-  return  array[0].toUpperCase() + array.slice(1).toLowerCase()
+  return  array.charAt(0).toUpperCase() + array.slice(1).toLowerCase()
   
 }
 
@@ -34,7 +34,7 @@ const objeto = () => {
     ability: remocao[4],
     atacks1: remocaoAtacks[0].slice(2, 14),
     atacks2: remocaoAtacks[1],
-    atacks3: remocaoAtacks[2],
+    atacks3: remocaoAtacks[2].slice(1, 8),
     place1: remocao[5],
   });
 console.log(`
@@ -45,7 +45,7 @@ Ability: ${pkm[0].ability.toLowerCase()}
 Attacks:
     - ${transforma(pkm[0].atacks1).trim()},
     - ${transforma(pkm[0].atacks2).trim()}
-    - ${pkm[0].atacks3.slice(1, 8).toLowerCase()}
+    - ${transforma(pkm[0].atacks3)}
 
 Places:
     - ${transforma(pkm[0].place1)}
